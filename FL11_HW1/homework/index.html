@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Basics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="main">
+      <div id="container">
+        <div id="content" role="main">
+          <img src="logo.png" alt="logotype">
+          <h1>HTML Elements</h1>
+          <hr>
+          <nav>
+            <a href="index.html"><strong>Home</strong></a>
+            <a href="#headers"><strong>Headers</strong> </a>
+            <a href="#textformats"><strong>Text formats</strong></a>
+            <a href="#list"><strong>List</strong></a>
+            <a href="#table"><strong>Table</strong></a>
+            <a href="#blockquote"><strong>Blockquotes</strong></a>
+        </nav>
+          <hr>
+          <div>
+            <p>Lorem ipsum dolor sit amet, <a href="#">test link</a> adipiscing elit. <strong>This is strong</strong>. Nullam dignissim convallis est. Quisque aliquam.
+              <em>This is emphasized</em>. Donec faucibus. Nunc iaculis suscipit dui. 5 <sup>3</sup> = 125. Water is H<sub>2</sub>O.
+              Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. <cite>The New York Times</cite>
+              (That&#8217;s a citation). <u>Underline</u>.
+              Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p><br>
+            <p>Watch out for the abbreviations! <abbr title="Hyper Text Markup Language"> HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr>  
+              are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. To copy a file type
+              <samp>COPY</samp> <em>filename</em>. <del>Dinner`s at 5:00</del>. <ins>Let&#8217;s make that 7</ins>. This <del>text</del> has been struck.</p>
+              <hr>
+            <div id="headers">
+              <p>Pay attention to h1 tag inside section element. Font-size for h1 is the same as font-size for h2,
+                because we have to use only one h1 on the page, and it is commonly used inside header</p>
+                <h2>Header 2</h2>
+                <h3>Header 3</h3>
+                <h4>Header 4</h4>
+                <h5>Header 5</h5>
+                <h6>Header 6</h6>
+            </div>
+            <hr>
+            <div id="textformats">
+              <h2>Text formats</h2>
+                <h3>Article text</h3>
+                  <article>
+                  <h2>Article tittle</h2>
+                  <p>Article description</p>
+                  </article>
+                <h3>Preformatted Text</h3>
+                <pre>
+<strong>Text</strong> 
+  in a <strong>pre</strong> element
+    is displayed in a fixed-width
+font, and it preserves
+both           spaces and
+    line breaks
+                  </pre>
+                  <h3>This is code</h3>
+                  <pre>
+.wrapper {
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+}
+                  </pre>
+            </div>
+            <div id="list">
+              <h2>Unordered Product List</h2>
+              <ul>
+                <li>Eggs</li>
+                <li>Meet
+                  <ul>
+                    <li>Chicken</li>
+                    <li>Beef</li>
+                    <li>Pork</li>
+                  </ul>
+                </li>
+                <li>Milk</li>
+              </ul>
+              <h2>Ordered TODO List</h2>
+              <ol>
+                <li>Relax</li>
+                <li>Finish homework
+                  <ol>
+                    <li>Analyze requirements</li>
+                    <li>Create HTML page</li>
+                    <li>Upload to GitHub</li>
+                  </ol>
+                </li>
+                <li>Enjoy your day</li>
+              </ol>
+              <h3>Definition List</h3>
+              <dl>
+                <dt>HTML</dt>
+                  <dd>
+                    HTML is the standard markup language for Web pages
+                  </dd>
+                <dt>CSS</dt>
+                  <dd>
+                   CSS describes how HTML elements are to be displayed 
+                  </dd>
+                <dt>JavaScript</dt>
+                  <dd>
+                   JavaScript is the Programming Language for the Web 
+                  </dd>
+              </dl>
+             <label>Select option
+                  <select id="select">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JS</option>
+                  </select>
+                </label>
+                <hr>
+                <hr>
+                <div id="table">
+                  <h2>Table</h2>
+                  <table>
+                    <thead>
+                      <tr>
+                        <td>Cities</td>
+                        <td>Technologies</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Lviv</td>
+                        <td>HTML</td>
+                      </tr>
+                      <tr>
+                        <td>Vinnytsia</td>
+                        <td>CSS</td>
+                      </tr>
+                      <tr>
+                        <td>Dnipro</td>
+                        <td>JavaScript</td>
+                      </tr>
+                      <tr>
+                        <td>Kharkiv</td>
+                        <td>Angular</td>
+                      </tr>
+                      <tr>
+                        <td>Kyiv</td>
+                        <td>ReactJS</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div id="blockquote">
+                  <h2>Blockquotes</h2>
+                  <p>Let's keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.</p>
+                  <blockquote>
+                    "If you go back a few hundred years, what we take for granted today would seem like magic-being able
+                    to talk to people over long distances, to transmit images, flying, accessing vast amounts of data
+                    like an oracle. These are all things that would have been considered magic a few hundred years ago." <br>
+                    <a href="#">Elon Musk</a>
+                </blockquote>
+                <hr>
+                </div>
+                <div>
+                  <form action="#">
+                      <label>First name:
+                        <input type="text" name="firstname">
+                      </label> 
+                      <br>
+                      <label>Second name:
+                        <input type="text" name="secondname">
+                      </label>
+                      <br>
+                      <label>Email:
+                        <input type="email"  name="text2">
+                      </label>
+                      <br>
+                      <label>Password:
+                        <input type="password" name="text1">
+                      </label>
+                      <br>
+                      <textarea cols="30" rows="5"></textarea><br>
+                      <input type="submit" value="Submit">
+                  </form>
+                </div>
+                <footer>
+                    &copy; Copyright Epam Systems
+                </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
