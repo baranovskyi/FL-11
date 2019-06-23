@@ -1,0 +1,68 @@
+@media print {
+    body {
+        background-color: #ffffff;
+        text-align: center;
+        font-size: 14px;
+        padding-top: 10px;
+    }
+    .tm-sidebar, .tm-team-img, #about, .tm-content-box > .gallery-container, .carousel-indicators, .img-contact-us, #contact {
+        display: none;
+    }
+    .blocks {
+        height: 150px;
+    }
+    .carousel-description, .text-xs-center {
+        margin-bottom: 0;
+    }
+    .tm-content-box {
+        margin-bottom: 10px;
+    }
+    .padding-medium {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .tm-banner, #tmCarousel, .tm-main-content {
+        padding: 0;
+    }
+    .tm-team-description-container {
+        max-width: 100%;
+        text-align: center;
+    }
+    .heading {
+        width: 400px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    .heading .padding-medium h2 {
+        color: lightskyblue;
+        font-weight: lighter;
+    }
+    .heading>.padding-medium>ol {
+        padding: 0;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .heading>.padding-medium>ol>li>a {
+        text-decoration: none;
+        color: #000;
+    }
+    .heading>.padding-medium>ol>li:nth-child(2n+1){
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .heading>.padding-medium>ol>li:nth-child(2n){
+        display: flex;
+        justify-content: flex-end;
+    }
+    .heading>.padding-medium>ol>li>a:first-letter{
+        color: lightskyblue;
+        font-size: 1.8em;
+    }
+
+
+}
