@@ -1,0 +1,215 @@
+@mixin backgroundImage($size:cover, $repeat: no-repeat, $position:center) {
+    background: {
+        image: url($backgroungImage);
+        size: $size;
+        repeat: $repeat;
+        position: $position;
+    }
+}
+$fonts: (source: ('Source Sans Pro', sans-serif), hind: ('Hind', sans-serif), fresca: ('Fresca', sans-serif));
+// .submit-button {
+//     border: none;
+//     background-color: $buttonColor;
+//     color: #fff;
+//     padding: 10px 35px;
+//     font-family: map-get($fonts, hind);
+//     border-radius: 5px;
+//     margin-top: 20px;
+// }
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $mainBackground;
+}
+.header {
+    @include backgroundImage();
+    height: 100vh;
+    border-bottom-right-radius: 50%;
+    padding-left: 100px;
+    &-wrap {
+        width: 45%;
+    }
+    &_heading {
+        font-family: map-get($fonts, source);
+        color: $textColor;
+        font-size: 58px;
+        font-weight: bold;
+        position: relative;
+        z-index: 200;
+        &:after {
+            content: "";
+            display: block;
+            width: 245px;
+            z-index: -1;
+            position: absolute; 
+            
+            top: 118px;
+            left: 0;
+            height: 16px;
+            background-color: $underline;
+        }
+    }
+    &_text {
+        color: $textColor;
+        font-family: map-get($fonts, hind);
+    }
+    &_button {
+        border: none;
+        background-color: $buttonColor;
+        color: #fff;
+        padding: 10px 35px;
+        font-family: map-get($fonts, hind);
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+}
+.landing-logo {
+    width: 200px;
+    img {
+        margin-right: 15px;
+        vertical-align: sub;
+    }
+    p {
+        display: inline-block;
+        font-family: map-get($fonts, hind);
+        font-weight: bold;
+        color: $textColor;
+        font-size: 24px;
+        margin-bottom: 0px;
+        line-height: 1;
+        vertical-align: super;
+    }
+    span {
+        display: block;
+        font-size: 10px;
+        margin-left: 10px;
+    }
+}
+.section {
+    text-align: center;
+    position: relative;
+    &_card_wrap {
+        margin: 0 auto;
+        display: flex;
+        width: 1050px;
+        justify-content: space-around;
+    }
+    &_text {
+        color: $textColor;
+        font-family: map-get($fonts, source);
+        font-weight: bold;
+        font-size: 28px;
+        position: relative;
+        &:after {
+            content: "";
+            display: block;
+            width: 132px;
+            height: 10px;
+            background-color: $underline;
+            position: absolute;
+            top: 20px;
+            left: 677px;
+            z-index: -1;
+        }
+    }
+    &_card {
+        background-color: $cardBackground;
+        width: 300px;
+        text-align: center;
+        border-radius: 10px;
+        padding: 15px;
+        color: #fff;
+        &_heading {
+            font-weight: bold;
+            font-family: map-get($fonts, source);
+            position: relative;
+            z-index: 50;
+            &:after {
+                content: "";
+                display: block;
+                width: 132px;
+                height: 8px;
+                background-color: $underline;
+                position: absolute;
+                top: 13px;
+                left: 84px;
+                z-index: -1;
+            }
+        }
+        &_text {
+            font-size: 14px;
+            color: $cardTextColor;
+            font-family: map-get($fonts, hind);
+        }
+        img {
+            width: 95%;
+            border-radius: 10px;
+            margin-top: 5px;
+        }
+    }
+    &_banner {
+        position: absolute;
+        top: 610px;
+        right: 25%;
+        left: 25%;
+        width: 50%;
+        margin: 0 auto;
+        border-radius: 10px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-around;
+        background-image: linear-gradient(to right, $gradientStart, $gradientEnd);
+        &_text_wrap {
+            text-align: left;
+        }
+        &_button {
+            @extend .header_button;
+            height: 40px;
+            margin-top: 40px;
+        }
+        &_heading {
+            font-family: map-get($fonts, hind);
+            font-weight: 900;
+            color: $textColor;
+            font-size: 22px;
+            margin-bottom: 0;
+            position: relative;
+            z-index: 40;
+            &:after {
+                content: "";
+                display: block;
+                width: 45px;
+                height: 10px;
+                background-color: $underline;
+                position: absolute;
+                top: 17px;
+                left: 92px;
+                z-index: -1;
+            }
+        }
+        &_text {
+            color: $cardTextColor;
+            font-family: map-get($fonts, hind);
+        }
+    }
+    
+}
+.footer {
+    background-color: $cardBackground;
+    padding: 100px 0 50px 0;
+    margin-top: 200px;
+    &-wrap {
+        display: flex;
+        justify-content: space-around;
+        color: $cardTextColor;
+        p {
+            flex-basis: 300px;
+            margin-top: 0;
+        }
+        .landing-logo p {
+            color: $cardTextColor;
+            margin: 0;
+        }
+    }
+
+}

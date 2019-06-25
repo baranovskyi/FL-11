@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff; }
+
+.header {
+  background-image: url("../img/m-h-day.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  border-bottom-right-radius: 50%;
+  padding-left: 100px; }
+  .header-wrap {
+    width: 45%; }
+  .header_heading {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #282b39;
+    font-size: 58px;
+    font-weight: bold;
+    position: relative;
+    z-index: 200; }
+    .header_heading:after {
+      content: "";
+      display: block;
+      width: 245px;
+      z-index: -1;
+      position: absolute;
+      top: 118px;
+      left: 0;
+      height: 16px;
+      background-color: #0ca1c8; }
+  .header_text {
+    color: #282b39;
+    font-family: "Hind", sans-serif; }
+  .header_button, .section_banner_button {
+    border: none;
+    background-color: #699a00;
+    color: #fff;
+    padding: 10px 35px;
+    font-family: "Hind", sans-serif;
+    border-radius: 5px;
+    margin-top: 20px; }
+
+.landing-logo {
+  width: 200px; }
+  .landing-logo img {
+    margin-right: 15px;
+    vertical-align: sub; }
+  .landing-logo p {
+    display: inline-block;
+    font-family: "Hind", sans-serif;
+    font-weight: bold;
+    color: #282b39;
+    font-size: 24px;
+    margin-bottom: 0px;
+    line-height: 1;
+    vertical-align: super; }
+  .landing-logo span {
+    display: block;
+    font-size: 10px;
+    margin-left: 10px; }
+
+.section {
+  text-align: center;
+  position: relative; }
+  .section_card_wrap {
+    margin: 0 auto;
+    display: flex;
+    width: 1050px;
+    justify-content: space-around; }
+  .section_text {
+    color: #282b39;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    position: relative; }
+    .section_text:after {
+      content: "";
+      display: block;
+      width: 132px;
+      height: 10px;
+      background-color: #0ca1c8;
+      position: absolute;
+      top: 20px;
+      left: 677px;
+      z-index: -1; }
+  .section_card {
+    background-color: #21232E;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+    color: #fff; }
+    .section_card_heading {
+      font-weight: bold;
+      font-family: "Source Sans Pro", sans-serif;
+      position: relative;
+      z-index: 50; }
+      .section_card_heading:after {
+        content: "";
+        display: block;
+        width: 132px;
+        height: 8px;
+        background-color: #0ca1c8;
+        position: absolute;
+        top: 13px;
+        left: 84px;
+        z-index: -1; }
+    .section_card_text {
+      font-size: 14px;
+      color: #C0C3CE;
+      font-family: "Hind", sans-serif; }
+    .section_card img {
+      width: 95%;
+      border-radius: 10px;
+      margin-top: 5px; }
+  .section_banner {
+    position: absolute;
+    top: 610px;
+    right: 25%;
+    left: 25%;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(to right, #649506, #295ad5); }
+    .section_banner_text_wrap {
+      text-align: left; }
+    .section_banner_button {
+      height: 40px;
+      margin-top: 40px; }
+    .section_banner_heading {
+      font-family: "Hind", sans-serif;
+      font-weight: 900;
+      color: #282b39;
+      font-size: 22px;
+      margin-bottom: 0;
+      position: relative;
+      z-index: 40; }
+      .section_banner_heading:after {
+        content: "";
+        display: block;
+        width: 45px;
+        height: 10px;
+        background-color: #0ca1c8;
+        position: absolute;
+        top: 17px;
+        left: 92px;
+        z-index: -1; }
+    .section_banner_text {
+      color: #C0C3CE;
+      font-family: "Hind", sans-serif; }
+
+.footer {
+  background-color: #21232E;
+  padding: 100px 0 50px 0;
+  margin-top: 200px; }
+  .footer-wrap {
+    display: flex;
+    justify-content: space-around;
+    color: #C0C3CE; }
+    .footer-wrap p {
+      flex-basis: 300px;
+      margin-top: 0; }
+    .footer-wrap .landing-logo p {
+      color: #C0C3CE;
+      margin: 0; }
