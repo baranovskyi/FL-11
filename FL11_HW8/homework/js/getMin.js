@@ -1,4 +1,3 @@
-function getMin () {
-    return Math.min(...arguments);
+function getMin() { return Math.min(...arguments);
 }
-console.log(getMin(4, 5, 1, -5, -8, 13));
+console.log(getMin(-7,5,91,-23,8,0,17,-64,35));
