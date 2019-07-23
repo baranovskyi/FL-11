@@ -1,0 +1,43 @@
+body {
+    color: rgb(0, 185, 231);
+}
+.taskInput {
+    padding: 10px;
+    width: 70%;
+    display: inline-block;
+}
+#root {
+    margin: 0 auto;
+    width: 70%;
+    /* text-align: center; */
+}
+.headerTask {
+    text-align: center;
+}
+hr {
+    height: 4px;
+    border: 0;
+    background-color: rgb(171, 232, 247);
+}
+.taskBlock {
+    display: flex;
+    justify-content: space-between;
+}
+.taskBlock p {
+    display: inline-block;
+}
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    width: 32px;
+    height: 32px;
+}
+button:hover {
+    cursor: pointer;
+}
+#maxItem {
+    display: none;
+}
